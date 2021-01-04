@@ -1,0 +1,35 @@
+<html>
+  <head>
+  </head>
+
+  <body>
+    <ul>
+      <li>
+        <a href="/">..</a>
+      </li>
+      <li>
+        <a href="packages/">packages</a>
+      </li>
+    </ul>
+
+    <br />
+
+    <h2>/etc/portage/make.conf (host)</h2>
+    <pre>
+GENTOO_MIRRORS="https://portage.condi.me/ http://distfiles.gentoo.org/"
+PORTAGE_BINHOST="https://portage.condi.me/x86_64-pc-linux-gnu/packages/"
+    </pre>
+
+    <h2>crossdev</h2>
+    <pre>
+$ crossdev -S -t armv7a-hardfloat-linux-gnueabi
+    </pre>
+
+    <h2>/usr/armv7a-hardfloat-linux-gnueabi/etc/portage/make.conf</h2>
+    <pre>
+GENTOO_MIRRORS="https://portage.condime/ http://distfiles.gentoo.org/"
+PORTAGE_BINHOST="https://portage.condi.me/armv7a-hardfloat-linux-gnueabi/packages/"
+    </pre>
+  </body>
+</html>
+

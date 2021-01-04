@@ -1,0 +1,35 @@
+<html>
+  <head>
+  </head>
+
+  <body>
+    <ul>
+      <li>
+        <a href="/">..</a>
+      </li>
+      <li>
+        <a href="packages/">packages</a>
+      </li>
+    </ul>
+
+    <br />
+
+    <h2>/etc/portage/make.conf (host)</h2>
+    <pre>
+GENTOO_MIRRORS="https://portage.condi.me/ http://distfiles.gentoo.org/"
+PORTAGE_BINHOST="https://portage.condi.me/x86_64-pc-linux-gnu/packages/"
+    </pre>
+
+    <h2>crossdev</h2>
+    <pre>
+$ crossdev -S -t armv6j-unknown-linux-gnueabihf
+    </pre>
+
+    <h2>/usr/armv6j-unknown-linux-gnueabihf/etc/portage/make.conf</h2>
+    <pre>
+GENTOO_MIRRORS="https://portage.condime/ http://distfiles.gentoo.org/"
+PORTAGE_BINHOST="https://portage.condi.me/armv6j-unknown-linux-gnueabihf/packages/"
+    </pre>
+  </body>
+</html>
+
